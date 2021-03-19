@@ -21,10 +21,10 @@ INNER JOIN Customers as C\
 ON C.CustomerName = "Rattlesnake Canyon Grocery" AND O.CustomerID = C.CustomerID
 
 6.Tamplikan Orderan dari Federal Shipping dengan OrderDate kurang dari bulan 12\
-SELECT ShipperName, OrderDate \
+SELECT *\
 FROM Shippers as S\
 Inner Join Orders as O\
-ON NOT OrderDate LIKE "%-12-%" AND S.ShipperID = O.ShipperID
+ON NOT OrderDate LIKE "%-12-%" AND S.ShipperID = O.ShipperID AND ShipperName = 'Federal Shipping'
 
 7.Tampilkan Semua Nama Barang yang dibeli oleh Save-a-lot Markets\
 SELECT DISTINCT  ProductName\
