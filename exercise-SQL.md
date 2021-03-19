@@ -2,4 +2,10 @@
 SELECT * FROM Customers\
 WHERE Country = "Germany" OR Country = "Mexico"\
 \
-a
+
+2.Tampilkan semua Product yang Harganya kurang dari 15
+SELECT * FROM Products\
+WHERE Price < 15\
+\
+
+3.
